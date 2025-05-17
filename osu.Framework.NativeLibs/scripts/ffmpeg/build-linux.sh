@@ -32,6 +32,13 @@ case $arch in
 esac
 
 FFMPEG_FLAGS+=(
+    # --enable-vaapi
+    # --enable-vdpau
+    # --enable-hwaccel='h264_vaapi,h264_vdpau'
+    # --enable-hwaccel='hevc_vaapi,hevc_vdpau'
+    # --enable-hwaccel='vp8_vaapi,vp8_vdpau'
+    # --enable-hwaccel='vp9_vaapi,vp9_vdpau'
+
     --target-os=linux
 )
 

@@ -178,7 +178,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install nasm
+          sudo apt-get install nasm libva-dev libvdpau-dev
 
       - name: Checkout
         uses: actions/checkout@v4
